@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cjsd32pdfExplorer;
 
 import java.io.File;
@@ -26,8 +21,7 @@ import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
 
 /**
- *
- * @author Colin
+ * @author Colin Stevens
  */
 public class UIController implements Initializable, Notifiable {
     private File sourceFile;
