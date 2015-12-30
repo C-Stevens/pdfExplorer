@@ -54,7 +54,7 @@ public class UIController implements Initializable, Notifiable {
     private void handleAbout(ActionEvent event) {
         about.setTitle("About");
         about.setHeaderText("About");
-        about.setContentText("PDF Explorer lets you see some of the metadata attributes that follow .pdf files around, which are generally unknown or unnoticed.\n\nThis program was written by Colin Stevens in December 2015, as a final project for MU CS3380.\n(It also certainly wasn't written all in one sitting on the last day)");
+        about.setContentText("PDF Explorer lets you see some of the metadata attributes that follow .pdf files around, which are generally unknown or unnoticed.\n\nThis program is (c) Colin Stevens 2015. For licensing information, refer to the license file included in the source code, available on GitHub.");
         about.showAndWait();
     }
     
