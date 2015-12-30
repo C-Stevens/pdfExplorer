@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fillWidth="true" prefHeight="420.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cjsd32pdfExplorer.UIController">
+  <children>
+    <MenuBar>
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Tools">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleViewMetadata" text="View Metadata" fx:id="generateMenuItem" />
+            <MenuItem mnemonicParsing="false" onAction="#handleExportMetadata" text="Export Metadata" fx:id="exportMenuItem" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane id="AnchorPane" opacity="1.0" prefHeight="500.0" prefWidth="700.0" styleClass="mainFxmlClass" visible="true" VBox.vgrow="ALWAYS">
+      <children>
+        <Label layoutX="14.0" layoutY="9.0" prefHeight="22.0" prefWidth="62.0" text="Source File:" />
+        <TextArea id="infoDisplay" fx:id="metadataDisplay" layoutX="14.0" layoutY="111.0" prefHeight="271.0" prefWidth="672.0" wrapText="true" />
+        <Label layoutX="14.0" layoutY="95.0" text="Metadata" />
+        <TextField fx:id="fileDisplay" layoutX="83.0" layoutY="9.0" prefWidth="603.0" />
+        <Button fx:id="exportButton" layoutX="572.0" layoutY="39.0" mnemonicParsing="false" onAction="#handleExportMetadata" prefWidth="114.0" text="Export Metadata" />
+        <Button fx:id="generateButton" cancelButton="false" layoutX="451.0" layoutY="39.0" mnemonicParsing="false" onAction="#handleViewMetadata" prefWidth="114.0" text="View Metadata" />
+        <Label layoutX="14.0" layoutY="71.0" text="Status:" />
+        <TextField fx:id="statusDisplay" layoutX="62.0" layoutY="68.0" prefWidth="624.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
