@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cjsd32pdfExplorer;
 
 import java.io.File;
@@ -21,8 +16,7 @@ import org.apache.xmpbox.xml.DomXmpParser;
 import org.apache.xmpbox.xml.XmpParsingException;
 
 /**
- *
- * @author Colin
+ * @author Colin Stevens
  */
 public class MetadataGrabber extends Thread {
     Notifiable parent;
